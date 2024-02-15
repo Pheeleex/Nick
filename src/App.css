@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(247, 247, 212);
+}
+
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(Abel.woff2) format('woff2');
+ }
+
+ .header{
+  height: 50rem;
+  width: 112%;
+  position: relative;
+  background-color: rgb(117, 124, 22);
+  margin-bottom: 4rem;
+ }
+
+ .header .nav{
+  position: absolute;
+  top: 0;
+  left:0px;
+  display: flex;
+  width: 100%; 
+  gap: 38%;
+ }
+
+ .header .nav ul{
+  display: flex;
+  gap: 20%;
+  list-style: none;
+ }
+
+ .header .nav ul li .direct{
+  font-weight: 700;
+  color: yellow;
+  text-transform: capitalize;
+ }
+
+ .header img{
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+ }
+
+
+ .hannibal{
+  background: rgba(198, 201, 10, 0.3);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  max-width: 400px;
+  border: 1px solid rgba(222, 233, 67, 0.1);
+  border-radius: 10px;
+  color: #232503;
+  font-family: 'poppins', sans-serif;
+  font-weight: 300;
+  margin-bottom: 40rem;
+  margin: 0px auto;
+ }
+
+
+ .hannibal p{
+  font-style: italic;
+ }
+
+ .typewriter{
+  margin-top: 4rem;
+  background: rgba(198, 201, 10, 0.3);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  border: 1px solid rgba(222, 233, 67, 0.1);
+  border-radius: 10px;
+  color: #232503;
+  font-family: 'poppins', sans-serif;
+  font-weight: 300;
+  width: 75%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+ }
+
+ .salute{
+  margin-top: 2rem;
+ }
+
+
+ @media (max-width:400px) {
+  .header{
+    width: 100%;
+  }
+  .hannibal{
+    margin: 0;
+    margin-bottom: 4rem;
+  }
+
+  .typewriter{
+    margin: 0;
+    margin-bottom: 4rem;
+  }
+ }
