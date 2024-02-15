@@ -4,6 +4,8 @@ import Hannibal from "./Components/Hannibal";
 import Typewriter from './Components/TypeWriter';
 import Header from './Components/Header';
 
+
+
 function App() {
   const textArray = [
     "Love for me is found in the darkness.",

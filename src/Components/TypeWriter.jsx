@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import Explode from './Explode';
 
 const Typewriter = ({ textArray, speed, scrollAt }) => {
   const [textIndex, setTextIndex] = useState(0);
@@ -70,6 +71,7 @@ const Typewriter = ({ textArray, speed, scrollAt }) => {
     <div className="typewriter">
       <div ref={typewriterRef} id="typedtext" dangerouslySetInnerHTML={{ __html: contents }} />
       {isTypingFinished && (
+        <div>
         <motion.div
           initial={{ x: 20 }}
           whileInView={{ x: [100, 0] }}
@@ -79,6 +81,8 @@ const Typewriter = ({ textArray, speed, scrollAt }) => {
           <span>I fart you, <br>
           </br> Nick</span>
         </motion.div>
+        <Explode />
+        </div>
       )}
     </div>
   );

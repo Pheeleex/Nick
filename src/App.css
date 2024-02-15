@@ -3,24 +3,25 @@
   padding: 0;
 }
 
+
+
 body{
   margin: 0;
   padding: 0;
   background-color: rgb(247, 247, 212);
+  width: 100%;
+  font-family: 'poppins', sans-serif
 }
 
 
-@font-face {
-  font-family: 'Poppins';
-  src: url(Abel.woff2) format('woff2');
- }
+
 
  .header{
-  height: 50rem;
-  width: 112%;
+  height: 30rem;
+  width: 100%;
   position: relative;
   background-color: rgb(117, 124, 22);
-  margin-bottom: 4rem;
+  margin-bottom: 7.4rem;
  }
 
  .header .nav{
@@ -44,6 +45,11 @@ body{
   text-transform: capitalize;
  }
 
+ .header .image{
+  width: 100%;
+  height: 100%;
+ }
+
  .header img{
   height: 100%;
   width: 100%;
@@ -54,20 +60,24 @@ body{
  .hannibal{
   background: rgba(198, 201, 10, 0.3);
   backdrop-filter: blur(20px);
-  padding: 40px;
-  max-width: 400px;
+  padding: 4%;
+  width: 90%;
   border: 1px solid rgba(222, 233, 67, 0.1);
   border-radius: 10px;
   color: #232503;
-  font-family: 'poppins', sans-serif;
+  font-family: 'Abel', sans-serif;
   font-weight: 300;
   margin-bottom: 40rem;
   margin: 0px auto;
+  text-wrap: wrap;
  }
 
 
  .hannibal p{
+  font-family: 'poppins',sans-serif;
   font-style: italic;
+  font-weight: 200;
+  font-size: 20px;
  }
 
  .typewriter{
@@ -81,14 +91,33 @@ body{
   font-family: 'poppins', sans-serif;
   font-weight: 300;
   width: 75%;
+  margin-left: 10%;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  font-size: 18px;
  }
 
  .salute{
   margin-top: 2rem;
  }
 
+ .buttons{
+  display: flex;
+  gap: 2rem;
+ }
+
+ .buttons button{
+  padding: 10px;
+  background-color: yellow;
+  color: #232503;
+  cursor: pointer;
+  text-transform: capitalize;
+ }
+
+
+ .move:hover{
+  display: none;
+ }
 
  @media (max-width:400px) {
   .header{
@@ -97,6 +126,7 @@ body{
   .hannibal{
     margin: 0;
     margin-bottom: 4rem;
+    width: 90%;
   }
 
   .typewriter{

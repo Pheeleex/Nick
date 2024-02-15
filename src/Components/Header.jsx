@@ -21,7 +21,9 @@ const Header = () => {
                 <li><a className='direct'>click2</a></li>
             </ul>
         </div>
-        <img src={unsplash} />          
+      <div className="image">
+          <img src={unsplash} />     
+      </div>     
     </div>
   )
 }
